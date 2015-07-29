@@ -1,5 +1,7 @@
 build
 Debug
 Release
+clang
+gcc
 *.user
 ~*

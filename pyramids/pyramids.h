@@ -478,7 +478,7 @@ bool jacobi_verify(Grid* A) {
 			}
 		}
 	}
-	if(ok && abs(sum-1) > 0.00001) {
+	if(ok && std::abs(sum-1) > 0.00001) {
 		ok = false;
 		std::stringstream ss;
 		ss << "FAIL SUM B " << fabs(sum-1) << "\n";

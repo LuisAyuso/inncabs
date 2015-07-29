@@ -6,5 +6,4 @@ file(GLOB_RECURSE module_srcs *.cpp *.c)
 
 
 add_executable(sparselu ${module_srcs})
-#target_include_directories(fft ${inncabs_includes})
-
+target_link_libraries(sparselu ${CMAKE_THREAD_LIBS_INIT})
